@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body.page {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333333;
+    line-height: 1.5;
+}
+
+.header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    padding: 15px 20px;
+}
+
+.header__container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-weight: bold;
+    font-size: 20px;
+    color: #333333;
+}
+
+.header__role-badge {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.header__user-name {
+    font-size: 14px;
+    color: #555555;
+}
+
+.header__logout-btn {
+    color: #dc3545;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.header__logout-btn:hover {
+    text-decoration: underline;
+}
+
+.main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}

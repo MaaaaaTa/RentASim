@@ -9,10 +9,10 @@ ini_set('log_errors', '1');
 ini_set('display_errors', '0'); // Скрываем технические ошибки от пользователя
 
 // Параметры подключения к БД (измени на свои, если в OpenServer/XAMPP другой пароль)
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'MySQL-8.0'); // Если не сработает, укажите '127.0.0.1'
 define('DB_NAME', 'sim_rent_db');
 define('DB_USER', 'root');
-define('DB_PASS', ''); // В OpenServer или XAMPP по умолчанию обычно пустой пароль
+define('DB_PASS', ''); // В OpenServer пароль по умолчанию пустой
 define('DB_CHARSET', 'utf8mb4');
 
 $dsn = "mysql:host=" . DB_HOST . ";dbname=" . DB_NAME . ";charset=" . DB_CHARSET;

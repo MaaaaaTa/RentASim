@@ -54,16 +54,9 @@ unset($_SESSION['flash_success'], $_SESSION['flash_error']);
                     require_once __DIR__ . '/views/client-panel.php';
                     break;
                 case 'Менеджер':
-                    // Подключаем панель управления (сделаем следующим шагом)
-                    if (file_exists(__DIR__ . '/views/manager-panel.php')) {
-                        require_once __DIR__ . '/views/manager-panel.php';
-                    } else {
-                        echo '<div class="panel"><h2 class="panel__title">Кабинет менеджера</h2><p>Модуль в разработке...</p></div>';
-                    }
-                    break;
-                case 'Администратор':
-                    require_once __DIR__ . '/views/admin-panel.php';
-                    break;
+            case 'Администратор':
+                require_once __DIR__ . '/views/admin-panel.php';
+                break;
                 default:
                     echo '<div class="alert alert--error">Неизвестная роль пользователя.</div>';
             }

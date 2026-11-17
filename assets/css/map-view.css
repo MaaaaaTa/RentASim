@@ -1,0 +1,102 @@
+.map-view {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.map-view__title {
+    font-size: 22px;
+    margin-bottom: 18px;
+    color: #333333;
+}
+
+.map-view__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    gap: 20px;
+}
+
+.sim-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border-top: 4px solid #28a745;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sim-card--active-rent {
+    border-top-color: #ffc107;
+    opacity: 0.85;
+}
+
+.sim-card--maintenance {
+    border-top-color: #dc3545;
+    opacity: 0.7;
+}
+
+.sim-card__header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.sim-card__type {
+    color: #666666;
+}
+
+.sim-card__status {
+    color: #28a745;
+}
+
+.sim-card--active-rent .sim-card__status {
+    color: #d39e00;
+}
+
+.sim-card--maintenance .sim-card__status {
+    color: #dc3545;
+}
+
+.sim-card__model {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #333333;
+}
+
+.sim-card__specs {
+    list-style: none;
+    margin-bottom: 16px;
+    font-size: 14px;
+    color: #555555;
+}
+
+.sim-card__spec {
+    margin-bottom: 6px;
+}
+
+.sim-card__btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.sim-card__btn:hover {
+    background-color: #0056b3;
+}
+
+.sim-card__hint {
+    font-size: 13px;
+    color: #666666;
+    font-style: italic;
+}
