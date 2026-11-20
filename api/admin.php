@@ -28,9 +28,8 @@ try {
         $_SESSION['flash_success'] = "Пользователь #{$targetUserId} разблокирован.";$stmt->execute([':uid' => $targetUserId]);
         $_SESSION['flash_success'] = "Пользователь #{$targetUserId} разблокирован.";
 
-    // Добавление нового СИМ
-    } elseif ($action === 'add_sim') {
-        } elseif ($action === 'block') {
+   // Блокировка пользователя
+    } elseif ($action === 'block') {
         if ($_SESSION['user']['role'] !== 'Администратор') {
             $_SESSION['flash_error'] = 'Блокировка доступна только Администратору.';
             header('Location: ../index.php');
@@ -45,6 +44,9 @@ try {
             $stmt->execute([':uid' => $targetUserId]);
             $_SESSION['flash_success'] = "Пользователь #{$targetUserId} заблокирован.";
         }
+
+    // Добавление нового СИМ
+    } elseif ($action === 'add_sim') {
         $type        = trim($_POST['type'] ?? '');
         $modelName   = trim($_POST['model_name'] ?? '');
         $pricePerMin = (float) ($_POST['price_per_min'] ?? 0);

@@ -115,7 +115,7 @@ $simsList = $stmtSims->fetchAll();
                                 <form action="api/admin.php" method="POST" onsubmit="return confirm('Удалить этот транспорт?');">
                                     <input type="hidden" name="action" value="delete_sim">
                                     <input type="hidden" name="sim_id" value="<?php echo (int)$sim['sim_id']; ?>">
-                                    <button class="btn-small" type="submit">Удалить</button>
+                                    <button class="btn-small" style="background-color: #dc3545;" type="submit">Удалить</button>
                                 </form>
                             </td>
                         <?php endif; ?>
@@ -137,7 +137,6 @@ $simsList = $stmtSims->fetchAll();
                 <select name="type">
                     <option value="Самокат">Самокат</option>
                     <option value="Велосипед">Велосипед</option>
-                    <option value="Гироскутер">Гироскутер</option>
                 </select>
             </div>
 
